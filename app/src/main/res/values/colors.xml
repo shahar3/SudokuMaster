@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="menuBackgroud">#B0E0E6</color>
     <color name="menuTextColor">#FFFFFF</color>
+    <color name="squareBackground">#e5e5e5</color>
+    <color name="emptySquareBackground">#B0E0E6</color>
 </resources>
