@@ -4,25 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shaha.sudokumaster.GameActivity"
     android:orientation="vertical"
-    android:weightSum="100">
+    tools:context="com.example.shaha.sudokumaster.GameActivity">
+
     <LinearLayout
-        android:layout_margin="8dp"
-        android:id="@+id/actionLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="20"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/difficultyTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Difficulty:"/>
+            <TextView
+                android:id="@+id/timerTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/actionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="0"
+            android:orientation="horizontal"></LinearLayout>
     </LinearLayout>
     <GridView
         android:id="@+id/boardGrid"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="80"
-        android:numColumns="9"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:horizontalSpacing="1dp"
         android:isScrollContainer="false"
-        android:verticalSpacing="1dp"
-        android:horizontalSpacing="1dp">
-    </GridView>
+        android:numColumns="9"
+        android:verticalSpacing="1dp"></GridView>
 </LinearLayout>
